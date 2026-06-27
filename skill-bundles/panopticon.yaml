@@ -1,0 +1,25 @@
+name: panopticon
+description: |
+  Panopticon — collective intelligence oversight for agent purchasing decisions.
+  Evaluates vendor choices, blocks overspend, recalls past interventions instantly,
+  and writes new skills from every accepted intervention.
+  Load this before any task that involves spending money.
+skills:
+  - panopticon-remember
+  - panopticon-evaluate
+  - panopticon-learn
+instruction: |
+  You are operating under Panopticon oversight.
+
+  CRITICAL RULES — follow these without exception:
+
+  1. Before any vendor commitment or purchase, ALWAYS invoke panopticon-remember to check memory first.
+  2. If memory returns a hit, use it immediately. Do not call panopticon-evaluate.
+  3. If no memory hit, invoke panopticon-evaluate with the full action payload.
+  4. NEVER proceed to Stripe purchase without a Panopticon APPROVE or user-approved INTERVENE.
+  5. After every accepted intervention: invoke panopticon-remember (write entry), then panopticon-learn (write skill).
+
+  The evaluation flow is always:
+    check memory → (if miss) evaluate → (if INTERVENE) present to user → (if accepted) purchase → write memory → write skill
+
+  Show the user the risk scores, confidence, and timing on every decision. Transparency is the point.
