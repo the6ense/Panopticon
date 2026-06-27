@@ -27,14 +27,14 @@ The result: every agent in your ecosystem benefits from every other agent's expe
 
 | Scenario | Time | What happens |
 |---|---|---|
-| Scenario 1 | ~15s | Live evaluation: Worker picks $199/mo email provider → Panopticon intervenes → $29/mo alternative → $2,040/yr saved |
+| Scenario 1 | ~15s | Live evaluation: Worker picks $199/mo email provider → Panopticon intervenes → $65/mo alternative → $1,608/yr saved |
 | Scenario 2 | 0.00s | New agent, same category → Panopticon recalls instantly from prior skill → no evaluation needed |
 
 ## Install
 
 ```bash
 # Install Panopticon skills
-hermes skills tap add github:yourusername/panopticon
+hermes skills tap add github:the6ense/panopticon
 
 # Copy the bundle
 cp skill-bundles/panopticon.yaml ~/.hermes/skill-bundles/
